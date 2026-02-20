@@ -12,6 +12,20 @@ Outputs a report in HTML format by default.
 - Can add comparable files using the [plugin](#comparators).
 - Can add report format using the [plugin](#reporters).
 
+## Prerequisites
+
+- Java Runtime Environment 8 or later
+
+## Installation
+
+Download and extract the archive from the [release page](https://github.com/develhack/ddiff/releases). 
+
+ - `ddiff-x.x.x.tar.gz` /`ddiff-x.x.x.zip` - contains only the main program.
+ - `ddiff-x.x.x-all.tar.gz` /`ddiff-x.x.x-all.zip` - contains all known plugins.
+
+> [!TIP]
+> It will be more efficient if you add the extracted directory to your PATH.
+
 ## Usage
 
 ```
@@ -42,13 +56,9 @@ Recursively compares archives or directories.
 > Report is output to standard output.  
 > Please redirect it to a file if necessary. 
 
-## Prerequisites
+## Add plugins
 
-- Java Runtime Environment 8 or later
-
-## Installation
-
-TODO
+Place the plugin's JAR file in the `lib` directory under the installation directory.
 
 ## Known plugins
 
