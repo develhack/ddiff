@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+base_dir="$(cd $(dirname $0) && pwd)"
+# for MSYS2
+type -P cygpath >/dev/null && base_dir="$(cygpath -w "$base_dir")"
+
+java -cp "$base_dir/lib/*" com.develhack.ddiff.Main "$@"
